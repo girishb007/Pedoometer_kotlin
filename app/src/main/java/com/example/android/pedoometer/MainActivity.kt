@@ -8,9 +8,11 @@ import android.hardware.SensorManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import android.app.job.JobScheduler
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() , SensorEventListener {
+
 
 
     var running = false ;
