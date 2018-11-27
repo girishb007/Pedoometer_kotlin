@@ -56,6 +56,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/stepsvalue"
         app:layout_constraintVertical_bias="0.124"
-        tools:alpha="0.5" />
+        tools:alpha="0.5"
+        />
 
 </android.support.constraint.ConstraintLayout>

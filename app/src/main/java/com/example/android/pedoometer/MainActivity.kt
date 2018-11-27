@@ -13,7 +13,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() , SensorEventListener {
 
-
+    val mSensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
+    val mSensor: Sensor? = mSensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
 
     var running = false ;
     var sensorManager:SensorManager? = null ;
@@ -52,6 +53,15 @@ class MainActivity : AppCompatActivity() , SensorEventListener {
 
         if (running) {
         stepsvalue.setText("" +event.values[0])
+        }
+
+       // var running = false ;
+       /// var sensorManager:SensorManager? = null ;
+
+      ///  override fun onCreate(savedInstanceState: Bundle?) {
+      ///      super.onCreate(savedInstanceState)
+         //   setContentView(R.layout.activity_main)
+           /// sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
         }
 
 
