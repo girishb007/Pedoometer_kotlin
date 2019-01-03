@@ -1,4 +1,3 @@
-# Pedoometer_kotlin
 
 
 
